@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("/Resources/Images/fondo.png"); /* Cambia la ruta de la imagen según la ubicación real */
+    background-size: cover;
+    background-position: center;
+    color: #1565c0; /* Azul un poco más claro */
+    font-family: Baskerville, serif; /* Cambio a Baskerville */
+}
+
+.formulario-crearcuenta {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para mejorar la legibilidad */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px; /* Ancho máximo para evitar que se extienda demasiado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.formulario-crearcuenta h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 22px); /* Tomar el ancho total del formulario, menos el ancho del borde */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #1565c0; /* Color de fondo para el botón */
+    color: #fff; /* Color del texto del botón */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0d47a1; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+
+a {
+    color: #1565c0; /* Azul un poco más claro */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#show-password {
+    grid-row: 2; /* Botón mostrar contraseña en la segunda fila */
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1565c0;
+    color: #fff;
+    cursor: pointer;
+}
+
+#show-password:hover {
+    background-color: #0d47a1;
+}
+
+#password {
+    width: calc(100% - 22px); /* Tomar el ancho total del formulario, menos el ancho del borde */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
