@@ -20,7 +20,7 @@ export class ManageAccount {
   register(email, password) {
     createUserWithEmailAndPassword(auth, email, password)
       .then((_) => {
-        window.location.href = "index.html";
+        window.location.href = "/index.html";
         // Mostrar alerta de registro exitoso
         alert("Registro exitoso. Serás redirigido a la página de inicio de sesión.");
       })
